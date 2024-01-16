@@ -1,0 +1,5 @@
+package Foo
+
+T Test {
+    a = 3
+}

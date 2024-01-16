@@ -1,0 +1,16 @@
+package Foo
+
+type T {
+    a Integer
+    b Integer
+}
+
+checks T {
+    b != 0, fatal "b must not be zero"
+    a + b > 0, warning "a + b > 0"
+    a - b < 0, warning "a - b < 0"
+    a * b >= 0, warning "a * b >= 0"
+    a / b == 0, warning "a / b != 0"
+    a % b != 0, warning "a % b == 0"
+    a <= b, warning "a <= b"
+}

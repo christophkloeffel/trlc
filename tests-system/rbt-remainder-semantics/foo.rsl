@@ -1,0 +1,19 @@
+package Foo
+
+type T {
+    a Integer
+    b Integer
+}
+
+type U {
+    a Integer
+    b Integer
+}
+
+checks T {
+    b > 0 implies a == b * 2 + (a % b), "a must be b * 2 + (a % b)"
+}
+
+checks U {
+    b > 0 implies a == b * 1 + (a % b), "a must be b * 2 + (a % b)"
+}

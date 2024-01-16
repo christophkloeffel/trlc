@@ -1,0 +1,6 @@
+package Foo
+
+T Bar {
+    a = 3.0
+    b = 2.0
+}

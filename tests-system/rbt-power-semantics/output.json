@@ -1,0 +1,8 @@
+T Test {
+  ^^^^ rbt-power-semantics/foo.trlc:3: check warning: a ** b == 0
+{
+  "Test": {
+    "a": 3
+  }
+}
+Processed 1 model and 1 requirement file and found 1 warning

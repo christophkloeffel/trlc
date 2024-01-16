@@ -1,0 +1,18 @@
+package Foo
+
+type T {
+    a Integer
+}
+
+type B {
+    a Integer
+    b Integer
+}
+
+checks T {
+    a ** (-2) == 0, warning "a ** (-2) == 0"
+}
+
+checks B {
+    a ** b == 0, warning "a ** b == 0"
+}

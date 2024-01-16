@@ -1,0 +1,11 @@
+package Foo
+
+T Bar {
+    a = 5
+    b = 2
+}
+
+U Baz {
+    a = -5
+    b = 2
+}

@@ -1,0 +1,10 @@
+package Foo
+
+type T {
+    a Decimal
+    b Decimal
+}
+
+checks T {
+    b > 0.0 implies a / b == 1.5, "a / b == 1.5"
+}

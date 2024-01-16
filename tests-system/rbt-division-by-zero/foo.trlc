@@ -1,0 +1,11 @@
+package Foo
+
+T Bar {
+    a = 7
+    b = 0
+}
+
+C Baz {
+    a = 0
+    b = 3
+}

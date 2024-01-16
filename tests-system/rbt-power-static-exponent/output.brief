@@ -1,0 +1,2 @@
+rbt-power-static-exponent/foo.rsl:13:11: trlc error: exponent must not be negative
+rbt-power-static-exponent/foo.rsl:17:10: trlc error: cannot be used in a static context

@@ -1,0 +1,9 @@
+package Foo
+
+type T {
+    a Integer
+}
+
+checks T {
+    a ** 2.0 == 0, warning "a ** b == 0"
+}

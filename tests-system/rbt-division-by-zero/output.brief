@@ -1,0 +1,2 @@
+rbt-division-by-zero/foo.trlc:5:9: trlc error: division by zero in a / b (foo.rsl:14)
+rbt-division-by-zero/foo.trlc:9:9: trlc error: division by zero in b % a (foo.rsl:18)

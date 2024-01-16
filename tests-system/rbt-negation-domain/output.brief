@@ -1,0 +1,1 @@
+rbt-negation-domain/foo.rsl:9:11: trlc error: expected expression of type Builtin_Boolean, got Builtin_Integer instead

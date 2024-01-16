@@ -1236,7 +1236,7 @@ section "Operators" {
 
       adding_operator ::= '+' | '-'
 
-      multiplying_operator ::= '*' | '/' | '%'
+      multiplying_operator ::= '*' | '/' | '%' | '**'
     '''
   }
 

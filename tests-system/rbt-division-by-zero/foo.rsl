@@ -1,0 +1,19 @@
+package Foo
+
+type T {
+    a Integer
+    b Integer
+}
+
+type C {
+    a Integer
+    b Integer
+}
+
+checks T {
+    a / b > 0, "a / b must be greater than 0"
+}
+
+checks C {
+     b % a == 0, "b must be a multiple of a"
+}

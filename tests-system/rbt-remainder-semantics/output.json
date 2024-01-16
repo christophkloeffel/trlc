@@ -1,0 +1,11 @@
+{
+  "Bar": {
+    "a": 6,
+    "b": 3
+  },
+  "Baz": {
+    "a": 7,
+    "b": 5
+  }
+}
+Processed 1 model and 1 requirement file and found no issues

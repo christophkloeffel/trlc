@@ -1,0 +1,19 @@
+package Foo
+
+type T {
+    a Integer
+    b Integer
+}
+
+type U {
+    a Decimal
+    b Decimal
+}
+
+checks T {
+    a * b == 15, ""
+}
+
+checks U {
+    a * b == -15.0, ""
+}

@@ -1,0 +1,6 @@
+package Foo
+
+T Test {
+    a = 2
+    b = 7
+}

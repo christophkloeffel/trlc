@@ -959,6 +959,11 @@ class Parser(Parser_Base):
 
     def parse_factor(self, scope):
         # lobster-trace: LRM.Factor
+        # lobster-trace: LRM.Power_Static_Exponent
+        # lobster-trace: LRM.Power_Domain
+        # lobster-trace: LRM.Absolute_Value_Domain
+        # lobster-trace: LRM.Negation_Domain
+        
         assert isinstance(scope, ast.Scope)
 
         if self.peek_kw("not"):

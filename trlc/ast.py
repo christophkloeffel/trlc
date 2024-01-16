@@ -1253,7 +1253,10 @@ class Unary_Expression(Expression):
         # lobster-trace: LRM.Len_Semantics
         # lobster-trace: LRM.Integer_Conversion_Semantics
         # lobster-trace: LRM.Decimal_Conversion_Semantics
-
+        # lobster-trace: LRM.Absolute_Value_Domain
+        # lobster-trace: LRM.Negation_Domain
+        # lobster-trace: LRM.Absolute_Value_Semantics
+        # lobster-trace: LRM.Negation_Semantics
         assert isinstance(mh, Message_Handler)
         assert context is None or isinstance(context, dict)
 
@@ -1503,7 +1506,14 @@ class Binary_Expression(Expression):
         # lobster-trace: LRM.Startswith_Semantics
         # lobster-trace: LRM.Endswith_Semantics
         # lobster-trace: LRM.Matches_Semantics
-
+        # lobster-trace: LRM.Power_Semantics
+        # lobster-trace: LRM.Power_Domain
+        # lobster-trace: LRM.Division_By_Zero
+        # lobster-trace: LRM.Remainder_Semantics
+        # lobster-trace: LRM.Rational_Division_Semantics
+        # lobster-trace: LRM.Integer_Division_Semantics
+        # lobster-trace: LRM.Multiplying_Semantics
+        
         assert isinstance(mh, Message_Handler)
         assert context is None or isinstance(context, dict)
 

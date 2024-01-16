@@ -1,0 +1,10 @@
+package Foo
+
+type T {
+    a Integer
+    b Integer
+}
+
+checks T {
+    not(a * b), warning "not (a * b == 0)"
+}

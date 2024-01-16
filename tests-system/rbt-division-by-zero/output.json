@@ -1,0 +1,5 @@
+b = 0
+    ^ rbt-division-by-zero/foo.trlc:5: error: division by zero in a / b (foo.rsl:14)
+a = 0
+    ^ rbt-division-by-zero/foo.trlc:9: error: division by zero in b % a (foo.rsl:18)
+Processed 1 model and 1 requirement file and found 2 errors

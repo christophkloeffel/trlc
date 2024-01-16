@@ -1,0 +1,10 @@
+package Foo
+
+T Test {
+    a = 3
+}
+
+B Bar {
+    a = 3
+    b = 2
+}

@@ -1,0 +1,5 @@
+a ** (-2) == 0, warning "a ** (-2) == 0"
+      ^ rbt-power-static-exponent/foo.rsl:13: error: exponent must not be negative
+a ** b == 0, warning "a ** b == 0"
+     ^ rbt-power-static-exponent/foo.rsl:17: error: cannot be used in a static context
+Processed 1 model and 1 requirement file and found 2 errors
