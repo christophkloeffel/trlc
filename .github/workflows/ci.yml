@@ -15,16 +15,16 @@ jobs:
     name: PyLint
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Set up Python 3.9
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v4
         with:
           python-version: "3.9"
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pylint pycodestyle
-          pip install --no-deps bmw-lobster-core bmw-lobster-tool-trlc
+          python -m pip install pylint pycodestyle
+          python -m pip install --no-deps bmw-lobster-core bmw-lobster-tool-trlc
       - name: Style check
         run: |
           make style
@@ -39,20 +39,20 @@ jobs:
         py-version: ["3.8", "3.9", "3.10", "3.11"]
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v3
-      - uses: supplypike/setup-bin@v3
+      - uses: actions/checkout@v4
+      - uses: supplypike/setup-bin@v4
         with:
           uri: 'https://github.com/cvc5/cvc5/releases/download/cvc5-1.0.8/cvc5-Linux'
           name: 'cvc5'
           version: '1.0.8'
       - name: Set up Python ${{ matrix.py-version }}
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.py-version }}
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          python -m pip install -r requirements.txt
       - name: Executing system tests
         run: |
           make system-tests
